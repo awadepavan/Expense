@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Expense Tracker</h1>
+        <form id="expenseTracker" action="/api/add-expense" method="POST">
+            <input type="number" id="amount" name="amount" placeholder="Amount" required>
+            <input type="text" id="description" name="description" placeholder="Description" required>
+            <input type="text" id="category" name="category" placeholder="Category" required>
+            <button type="submit">Add Expense</button>
+        </form>
+        <div id="message"></div>
+
+        <h2>All Expenses</h2>
+        <div id="expenseList"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
